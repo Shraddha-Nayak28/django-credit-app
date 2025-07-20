@@ -33,7 +33,7 @@ A Django-based Credit Approval System that allows customers to register, check l
 ### 1. Register Customer  
 **POST** `/api/register/`
 
-```json
+
 {
   "customer_id": "CU123456",
   "first_name": "John",
@@ -46,7 +46,7 @@ A Django-based Credit Approval System that allows customers to register, check l
 
 
 ---
-### 2. Check Loan Eligibility
+2. Check Loan Eligibility
 **POST** `/api/check-eligibility/`
 
 ```json
