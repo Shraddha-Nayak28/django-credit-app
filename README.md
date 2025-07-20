@@ -12,6 +12,8 @@ A Django-based Credit Approval System that allows customers to register, check l
 - ✅ Loan creation with EMI calculations
 - ✅ Django REST Framework APIs
 - ✅ Dockerized environment for easy setup
+- ✅ Postman-friendly API structure
+- ✅ Built-in credit approval logic based on income and loan terms
 
 ---
 
@@ -19,16 +21,17 @@ A Django-based Credit Approval System that allows customers to register, check l
 
 - **Backend**: Django, Django REST Framework
 - **Database**: PostgreSQL
-- **Task Queue**: Celery (for future extensions)
+- **Task Queue**: Celery (future integration possible)
 - **Queue Broker**: Redis
 - **Containerization**: Docker & Docker Compose
+- **Testing & API Demo**: Postman
 
 ---
 
 ## 🛠️ API Endpoints
 
-### 1. Register Customer
-`POST /api/register/`
+### 1. Register Customer  
+**POST** `/api/register/`
 
 ```json
 {
