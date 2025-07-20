@@ -44,17 +44,19 @@ A Django-based Credit Approval System that allows customers to register, check l
 }
 ```
 
-2. Check Loan Eligibility
-POST /api/check-eligibility/
+### 2. Check Loan Eligibility
+**POST** `/api/check-eligibility/`
+```json
 {
   "customer_id": "CU123456",
   "loan_amount": 100000,
   "interest_rate": 12,
   "tenure": 12
 }
+```
 
-
-Sample Response
+### Sample Response
+```json
 {
   "customer_id": "CU123456",
   "approval": true,
@@ -64,9 +66,11 @@ Sample Response
   "monthly_installment": 8887.45,
   "approval_details": "Customer eligible"
 }
+```
 
- 3.Create Loan
-POST /api/create-loan/
+### 3.Create Loan
+**POST** `/api/create-loan/`
+```json
 
 {
   "customer_id": "CU123456",
@@ -75,3 +79,4 @@ POST /api/create-loan/
   "tenure": 12,
   "monthly_installment": 8887.45
 }
+```
