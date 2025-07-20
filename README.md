@@ -42,7 +42,7 @@ A Django-based Credit Approval System that allows customers to register, check l
   "monthly_income": 50000,
   "employment_status": "Salaried"
 }
-
+```
 
 2. Check Loan Eligibility
 POST /api/check-eligibility/
